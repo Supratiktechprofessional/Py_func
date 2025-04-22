@@ -1,0 +1,22 @@
+## 
+Write a program to create a function show_employee() using the following conditions.
+
+It should accept the employee’s name and salary and display both.
+If the salary is missing in the function call then assign default value 9000 to salary
+##
+
+def show_employee(name, salary=9000):
+    print("Name:", name, "Salary:", salary)
+
+# First input: name and salary
+name1 = input("Enter first employee's name: ")
+salary1 = input("Enter salary (leave blank for default): ")
+
+if salary1.strip() == "":
+    show_employee(name1)
+else:
+    show_employee(name1, int(salary1))
+
+# Second input: only name
+name2 = input("\nEnter second employee's name: ")
+show_employee(name2)  # Uses default salary
