@@ -1,0 +1,18 @@
+#Write a program to create function func1() to accept a variable length of arguments and print their value.
+
+def func1(*args):
+    for i, val in enumerate(args):
+        print(f"Argument {i+1}:", val)
+
+# 1st call: user inputs 3 numbers
+print("Enter 3 numbers for first call:")
+a1 = int(input("Enter first number: "))
+b1 = int(input("Enter second number: "))
+c1 = int(input("Enter third number: "))
+func1(a1, b1, c1)
+
+# 2nd call: user inputs 2 numbers
+print("\nEnter 2 numbers for second call:")
+a2 = int(input("Enter first number: "))
+b2 = int(input("Enter second number: "))
+func1(a2, b2)
