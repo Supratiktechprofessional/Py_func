@@ -1,0 +1,15 @@
+#Write a program to create function calculation() such that it can accept two variables and calculate addition and subtraction. Also, it must return both addition and subtraction in a single return call.
+
+def calculation(a, b):
+    addition = a + b
+    subtraction = a - b
+    # return multiple values separated by comma
+    return addition, subtraction
+
+# Get input from user
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+# Call function and get result in tuple
+res = calculation(a, b)
+print("Result (addition, subtraction):", res)
