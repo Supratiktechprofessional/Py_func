@@ -1,0 +1,14 @@
+#Write a program to create a recursive function to calculate the sum of numbers from 0 to 10.
+
+def addition(num):
+    if num:
+        # call same function by reducing number by 1
+        return num + addition(num - 1)
+    else:
+        return 0
+
+# Get user input
+n = int(input("Enter a number to calculate sum from 1 to that number: "))
+
+res = addition(n)
+print("Sum:", res)
